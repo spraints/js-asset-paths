@@ -1,9 +1,6 @@
-require "js-asset-paths/version"
+require 'js-asset-paths/version'
 
-module Js
-  module Asset
-    module Paths
-      # Your code goes here...
-    end
+module JsAssetPaths
+  class Engine < Rails::Engine
   end
 end

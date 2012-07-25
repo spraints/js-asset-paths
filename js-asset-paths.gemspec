@@ -4,8 +4,8 @@ require File.expand_path('../lib/js-asset-paths/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Matt Burke"]
   gem.email         = ["spraints@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Load the rails asset pipeline manifest in the browser, so it can be used from there.}
+  gem.summary       = %q{Load the rails asset pipeline manifest in the browser, so it can be used from there.}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
@@ -13,5 +13,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "js-asset-paths"
   gem.require_paths = ["lib"]
-  gem.version       = Js::Asset::Paths::VERSION
+  gem.version       = JsAssetPaths::VERSION
+
+  gem.add_dependency 'jquery-rails'
 end
